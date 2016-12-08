@@ -23,7 +23,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
 
   <body>
+	<a href="welcome.jsp"><font size="2"><i>返回</i></font></a>
   <h2>${ss }</h2>
+    <h2>${ssr }</h2>
 
 
 </body>

@@ -7,8 +7,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
   <head>
+    <link href="./login.css" rel="stylesheet" type="text/css" /> 
     <base href="<%=basePath%>">
-    
+
     <title>登陆</title>
     
 	<meta http-equiv="pragma" content="no-cache">
@@ -28,19 +29,22 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body>
+
   <center>
 <div>
-<h1>欢迎登陆</h1>
+<font color="red" size="200">&nbsp;</font>
+
+<h2><font color="red" size="15">欢迎登陆</font> </h2>
 <form action="LoginServlet" method="post">
 	<table>
 	<tr>
-	<td width="66" align="right"><font size="3">帐号：</font></td><td colspan="2"><input type="text" name="username" value="${username }" style="width:200;height:25;"/></td>
+	<td width="55" align="right"><font color="red" size="3">帐号：</font></td><td colspan="2"><input type="text" name="username" value="${username }" style="width:200;height:25;"/></td>
 	</tr>
 	<tr>
-	<td align="right"><font size="3">密码：</font></td><td colspan="2"><input type="text" name="password"  style="width:200;height:25;"/></td>
+	<td align="right"><font color="red" size="3">密码：</font></td><td colspan="2"><input type="text" name="password"  style="width:200;height:25;"/></td>
 	</tr>
 	<tr>
-	<td align="right"><font size="3">验证码：</font></td>
+	<td align="right"><font color="red" size="3">验证码：</font></td>
     <td width="108" valign="middle"><input type="text" name="verifycode" style="width:100;height:25;"/></td>
     <td width="90" valign="middle"><a href="javascript:change()"><img src="VerifyCodeServlet" id="verify" border="0"></a></td>
 	</tr>

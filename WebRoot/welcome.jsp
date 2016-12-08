@@ -7,6 +7,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
   <head>
+    <link href="./login.css" rel="stylesheet" type="text/css" /> 
     <base href="<%=basePath%>">
     
     <title>网站输入</title>
@@ -25,12 +26,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <body>
   <center>
    <div>
+   <font color="red" size="200">&nbsp;</font>
     <h2>${msg }</h2>
     <form action="URLServlet" method="post">
-请输入目的网站地址：<input type="text" name="tableurl"><br/>
+<font color="red" size="4">请输入目的网站地址</font>：<input type="text" name="tableurl"><br/>
   <input type="submit" value="确定">
     </form>
-<font color="red" size="2"> ${ss }</font>
+<font color="red" size="4"> ${ss }</font>
         </div>
   </center>
   </body>
