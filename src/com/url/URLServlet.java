@@ -40,7 +40,7 @@ public class URLServlet extends HttpServlet{
 		
 		if(tableurl==null||tableurl.trim().isEmpty()){
 			request.setAttribute("ss", "网站为空，请重新输入");
-			request.getRequestDispatcher("/welcome.jsp").forward(request, response);
+			request.getRequestDispatcher("/normal.jsp").forward(request, response);
 			return;
 		}
 		Document doc=Jsoup.connect(tableurl).get();

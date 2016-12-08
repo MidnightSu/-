@@ -10,7 +10,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <link href="./login.css" rel="stylesheet" type="text/css" /> 
     <base href="<%=basePath%>">
     
-    <title>网站输入</title>
+    <title>普通抽取</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -22,17 +22,18 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	-->
 
   </head>
-  
+
   <body>
   <center>
    <div>
-
+   <font color="red" size="200">&nbsp;</font>
+    <h2>${msg }</h2>
+    <form action="URLServlet" method="post">
+<font color="red" size="4">请输入目的网站地址</font>：<input type="text" name="tableurl"><br/>
+  <input type="submit" value="确定">
   
-  	<a href="quick.jsp"><font size="2"><i>1.快捷使用</i></font></a>
-  	<a href="normal.jsp"><font size="2"><i>2.普通抽取</i></font></a>
-  	<a href="collect.jsp"><font size="2"><i>3.查看收藏</i></font></a>
-  	<a href="help.jsp"><font size="2"><i>4.使用帮助</i></font></a>
-    
+
+    </form>
 <font color="red" size="4"> ${ss }</font>
         </div>
   </center>
